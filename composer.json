@@ -1,0 +1,23 @@
+{
+    "name": "r3_la/app-salon_php_mvc_js_sass",
+    "description": "Proyecto practico",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./Controllers",
+            "Model\\" : "./models",
+            "Classes\\" : "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ivnoff-Studio",
+            "email": "twoiussues@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

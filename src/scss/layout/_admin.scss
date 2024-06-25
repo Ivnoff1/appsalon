@@ -1,0 +1,42 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.citas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+    li {
+        border: 1px solid v.$azul;
+        border-radius: .5rem;
+        padding: 2rem;
+        p {
+            font-weight: v.$black;
+            color: v.$azul;
+        }
+
+        span,
+        .servicio {
+            font-weight: v.$regular;
+            color: v.$blanco;
+        }
+
+        &:hover {
+            background-color: v.$azul-2;
+            border: 1px solid v.$azul-2;
+
+        }
+
+    }
+}
+
+.servicios {
+    @extend .citas;
+
+    .acciones {
+        margin: 0;
+    }
+}
